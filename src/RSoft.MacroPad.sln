@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSoft.MacroPad", "RSoft.MacroPad\RSoft.MacroPad.csproj", "{B511DF5E-B2D5-4EC2-9B9D-9AED414D144D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSoft.MacroPad.BLL", "RSoft.MacroPad.BLL\RSoft.MacroPad.BLL.csproj", "{66158C5F-F1C4-4E42-8ED1-CD1CE044A721}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B511DF5E-B2D5-4EC2-9B9D-9AED414D144D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B511DF5E-B2D5-4EC2-9B9D-9AED414D144D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B511DF5E-B2D5-4EC2-9B9D-9AED414D144D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B511DF5E-B2D5-4EC2-9B9D-9AED414D144D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66158C5F-F1C4-4E42-8ED1-CD1CE044A721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66158C5F-F1C4-4E42-8ED1-CD1CE044A721}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66158C5F-F1C4-4E42-8ED1-CD1CE044A721}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66158C5F-F1C4-4E42-8ED1-CD1CE044A721}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D17B2152-755F-4B58-B3D1-1341DA282ECF}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,12 @@
+﻿GetAsyncKeyState
+SetWindowsHookEx
+UnhookWindowsHookEx
+CallNextHookEx
+MapVirtualKeyW
+MapVirtualKeyExW
+GetKeyNameTextW
+GetModuleHandle
+LoadKeyboardLayoutW
+ActivateKeyboardLayout
+GetKeyboardLayout
+PWSTR

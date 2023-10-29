@@ -1,0 +1,16 @@
+// Device configuration file
+// Tells what kind of devices to look for
+// The software is looking for a device with the given VendorId and ProductId
+// Then, it will search for a HID device under that, which has the given path parameter
+//
+// Format:
+//	{VendorId}:{ProductId},{PathFragment},{ProtocolVersion}
+//
+// ProtocolVersion can be 0 (Legacy) or 1 (Extended). apart from one device (the smallest one) all devices use the extended protocol
+
+4489:34960,mi_01,0
+4489:34864,mi_00,1
+4489:34865,mi_00,1
+4489:34866,mi_00,1
+4489:34867,mi_00,1
+4489:34832,mi_00,1

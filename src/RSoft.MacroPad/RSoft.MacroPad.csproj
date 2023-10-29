@@ -1,0 +1,115 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <OutputType>WinExe</OutputType>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.*.*</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+    <Title>RSoft MacroPad</Title>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <AssemblyFileVersion>1.0.*.*</AssemblyFileVersion>
+    <AssemblyName>RSoft.MacroPad</AssemblyName>
+    <AssemblyTitle>RSoft MacroPad</AssemblyTitle>
+    <Copyright>RSoft (c) 2023</Copyright>
+    <Authors>Mihály Rozovits (rozovits.mihaly@gmail.com)</Authors>
+    <Description>
+A new client instead of the godawful app they provide with some of the "macro" keypads.
+The configurations are only tested for the smallest 3 button + 1 knob keyboard, which is coincidentally the dumbest of them all. 
+For others I just took a wild guess based on the source code of the original software and hoped for the best.
+
+Feel free to reach out to me with your findings, issues, ideas or anything...
+      
+Enjoy!
+    </Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Infrastructure\Extern\**" />
+    <EmbeddedResource Remove="Infrastructure\Extern\**" />
+    <None Remove="Infrastructure\Extern\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Controls\Compound\KeyboardFunction.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Controls\Visual\KeyboardVisual.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Controls\Compound\KeyRecorderTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Controls\Visual\KbControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Controls\Simple\KeyStrokeDisplay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Controls\Tabs\KeyTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Controls\Tabs\LedTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Controls\Tabs\MediaKeyTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Controls\Tabs\MouseButtonsTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Controls\Simple\TransparentLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="layouts.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RSoft.MacroPad.BLL\RSoft.MacroPad.BLL.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Microsoft.Windows.CsWin32" Version="0.3.46-beta">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Windows.SDK.Win32Docs" Version="0.1.42-alpha" />
+    <PackageReference Include="Microsoft.Windows.SDK.Win32Metadata" Version="55.0.45-preview" />
+    <PackageReference Include="Microsoft.Windows.WDK.Win32Metadata" Version="0.9.9-experimental" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.0.0" />
+  </ItemGroup>
+</Project>
