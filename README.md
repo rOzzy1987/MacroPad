@@ -9,7 +9,9 @@ Enter the RSoft MacroPad!
 
 
 ## Installation
-No need to install anything, just build and run.
+No need to install anything, just download and extract a [Release](https://github.com/rOzzy1987/MacroPad/releases)
+
+Alternatively you ca clone the repository, build and run.
 
 ## GUI
 The main funcitons of the GUI are displayed on the image below
