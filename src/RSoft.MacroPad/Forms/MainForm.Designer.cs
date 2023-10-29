@@ -124,6 +124,7 @@
             keyboardLayout1.LedModeCount = 3;
             keyboardLayout1.MaxCharacters = 5;
             keyboardLayout1.Name = null;
+            keyboardLayout1.Products = null;
             keyboardLayout1.SupportsColor = false;
             keyboardLayout1.SupportsDelay = false;
             keyboardFunction1.KeyboardLayout = keyboardLayout1;
@@ -224,7 +225,7 @@
             Margin = new System.Windows.Forms.Padding(2);
             MinimumSize = new System.Drawing.Size(1047, 571);
             Name = "MainForm";
-            Text = "Form1";
+            Text = "RSoft MacroPad";
             Deactivate += StopRecording;
             splitContainer1.Panel1.ResumeLayout(false);
             splitContainer1.Panel2.ResumeLayout(false);

@@ -68,7 +68,7 @@ namespace RSoft.MacroPad.Forms
 
         private void ShowDisclaimerIfNeeded()
         {
-            if(!TestedProducts.IsTested(_usb.VendorId, _usb.ProductId))
+            if (!TestedProducts.IsTested(_usb.VendorId, _usb.ProductId))
             {
                 new DisclaimerForm().ShowDialog();
             }
