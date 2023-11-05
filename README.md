@@ -1,13 +1,28 @@
 # MacroPad
 So you've ordered a chinese macro keypad and the software supplied doesn't make any sense to you? That was my problem as well...
 
+![image](https://github.com/rOzzy1987/MacroPad/assets/617600/adf5b698-9ba4-4060-ade0-1fb078cac21c)
+
 Enter the RSoft MacroPad!
+
+![image](https://github.com/rOzzy1987/MacroPad/assets/617600/5fd74dc1-b420-4388-be8b-f427a05bedca)
 
 
 ## Installation
-No need to install anything, just build and run.
+No need to install anything, just download and extract a [Release](https://github.com/rOzzy1987/MacroPad/releases)
+
+Alternatively you ca clone the repository, build and run.
 
 ## GUI
+The main funcitons of the GUI are displayed on the image below
+![image](https://github.com/rOzzy1987/MacroPad/assets/617600/857b150b-291a-419f-82b2-e10fad5ed53f)
+
+The key sequence box is displaying keys to be sent by the macro keypad. You can see which modifiers are also sent with each keystroke, and on which sides were they used.
+The example below shows `LeftCtrl + LeftShift + F5` `Enter`
+
+![image](https://github.com/rOzzy1987/MacroPad/assets/617600/0e21d542-9a4e-44ef-bc9b-868b0bf810ac)
+
+The key difference to the original software is the this app translates hardware scancodes. This means if you have a non-US keyboard, you still can record keystrokes and will get the same keypresses when using the keypad 
 
 ## Usage
 ### Starting
@@ -17,7 +32,9 @@ Open the app and connect your macro keypad.
 
 If there is an existing configuration for your device, the app will select the layout for you. 
 
-If you can't see your keypad's visuals on screen or what you see is not your keypad you can select another one from the menu using the icon. If you can't find any, that resembles your keypad, you can just select the _***12 buttons 3 knobs***_ layout, and use that (this is just a visual representation, doesn't affect operation)
+If you can't see your keypad's visuals on screen or what you see is not your keypad you can select another one from the menu using the ![image](https://github.com/rOzzy1987/MacroPad/assets/617600/d5ec2fd0-3729-40ef-aad6-aa7030fdadf3)
+
+ icon. If you can't find any, that resembles your keypad, you can just select the _***12 buttons 3 knobs***_ layout, and use that (this is just a visual representation, doesn't affect operation)
 
 
 ### Operation
@@ -33,7 +50,8 @@ You can either set the LED mode or the selected key's function. To choose just s
 <sub>This section is incomplete due to insufficient stock of testing devices. I.e. I (the author) just bought the cheapest device that doesn't support a lot of features others do. For example this 3 button 1 knob keypad doesn't support colors, and only has 3 modes, on being the Off state</sub>
 
 ##### Key sequence
-You can record a key sequence for a button that will be played back using the record button. If you want to correct a typo or want to start over just use the delete and clear buttons.
+You can record a key sequence for a button that will be played back using the record ![image](https://github.com/rOzzy1987/MacroPad/assets/617600/f605970c-4aa9-4aeb-84aa-b4ff88b8f164) button. If you want to correct a typo or want to start over just use the backspace
+![image](https://github.com/rOzzy1987/MacroPad/assets/617600/7e396ae4-1db1-4bfc-a4b5-d19c1af4af29) and clear ![image](https://github.com/rOzzy1987/MacroPad/assets/617600/2ec5a021-479d-4a49-a881-7573ca38bbb8) buttons.
 
 The app records keys and modifiers together.
 
@@ -49,7 +67,7 @@ Select the button or scroll direction you need and add modifier keys as needed
 <sub>The 3 button 1 knob keypad only supports the left side modifiers, but others should support all</sub>
 
 #### Saving to keypad
-To save your settings just click the upload button 
+To save your settings just click the upload button  ![image](https://github.com/rOzzy1987/MacroPad/assets/617600/79128933-1b53-419a-a90d-3a04515bce8c)
 
 ## Contribute
 ### layouts.txt
