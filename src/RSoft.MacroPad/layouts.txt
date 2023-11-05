@@ -53,6 +53,17 @@ Layout: 6 buttons 2 knobs
 	K1,70,5
 	K2,70,25
 
+Layout: 6 buttons 1 knob
+	4498:34865
+	3:18:1:1:6
+	B1,5,5
+	B2,25,5
+	B3,45,5
+	B4,5,25
+	B5,25,25
+	B6,45,25
+	K1,70,15
+
 Layout: 12 buttons 3 knobs (v1)
 	4498:34866
 	3:18:1:1:6
@@ -90,3 +101,15 @@ Layout: 12 buttons 3 knobs (v2)
 	K1,93,5
 	K2,117,5		
 	K3,95,25,40,40	
+
+Layout: Mini Typewriter (6Btn 2Kn)
+	4498:34880
+	3:18:1:1:6
+	B1,5,30
+	B2,25,30
+	B3,45,30
+	B4,5,50
+	B5,25,50
+	B6,45,50
+	K1,5,5
+	K2,45,5

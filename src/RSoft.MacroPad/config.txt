@@ -8,6 +8,7 @@
 //
 // ProtocolVersion can be 0 (Legacy) or 1 (Extended). apart from one device (the smallest one) all devices use the extended protocol
 
+4489:34880,mi_01,1
 4489:34960,mi_01,0
 4489:34864,mi_00,1
 4489:34865,mi_00,1
