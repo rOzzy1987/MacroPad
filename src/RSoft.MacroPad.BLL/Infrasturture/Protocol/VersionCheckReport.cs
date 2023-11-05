@@ -1,7 +1,7 @@
 ﻿namespace RSoft.MacroPad.BLL.Infrasturture.Protocol
 {
 
-    internal class VersionCheckReport : Report
+    public class VersionCheckReport : Report
     {
         private VersionCheckReport() { }
 

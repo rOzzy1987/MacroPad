@@ -59,7 +59,7 @@ namespace RSoft.MacroPad.Forms
                     keyboardFunction1.KeyboardLayout = layout;
                 }
 
-                lblCommStatus.Text = $"Connected: ({_usb.VendorId}:{_usb.ProductId}) Protocol: {_usb.ProtocolType}.v{_usb.Version}";
+                lblCommStatus.Text = $"Connected: ({_usb.VendorId}:{_usb.ProductId}) Protocol: {_usb.ProtocolType}.id{_usb.Version}";
 
                 ShowDisclaimerIfNeeded();
             };
@@ -172,6 +172,12 @@ namespace RSoft.MacroPad.Forms
             StopRecording(sender, e);
             var aboutBox = new AboutBox();
             aboutBox.ShowDialog();
+        }
+
+        private void tsSetParams_Click(object sender, EventArgs e)
+        {
+            var f = new ConnectionForm(_usb);
+            f.ShowDialog();
         }
     }
 }

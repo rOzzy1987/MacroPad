@@ -12,7 +12,7 @@ namespace RSoft.MacroPad.BLL.Infrasturture.UsbDevice
         ushort VendorId { get; set; }
         ushort ProductId { get; set; }
         ProtocolType ProtocolType { get; }
-        byte Version { get; }
+        byte Version { get; set; }
 
         IEnumerable<(ushort VendorId, ushort ProductId, string PathFragment, ProtocolType protocolType)> SupportedDevices { get; set; }
 
@@ -30,7 +30,7 @@ namespace RSoft.MacroPad.BLL.Infrasturture.UsbDevice
         public ushort VendorId { get; set; } = 0;
         public ushort ProductId { get; set; } = 0;
         public ProtocolType ProtocolType { get; protected set; } = ProtocolType.Legacy;
-        public byte Version { get; protected set; }
+        public byte Version { get; set; }
 
         public event EventHandler OnConnected;
 
