@@ -96,6 +96,18 @@ namespace RSoft.MacroPad.Infrastructure
                 case Keys.None: return "";
                 case Keys.Pause: return "Brk";
                 case Keys.Space: return "";
+                case Keys.F13: return "F13";
+                case Keys.F14: return "F14";
+                case Keys.F15: return "F15";
+                case Keys.F16: return "F16";
+                case Keys.F17: return "F17";
+                case Keys.F18: return "F18";
+                case Keys.F19: return "F19";
+                case Keys.F20: return "F20";
+                case Keys.F21: return "F21";
+                case Keys.F22: return "F22";
+                case Keys.F23: return "F23";
+                case Keys.F24: return "F24";
                 default:
                     var s = GetLocalizedKeyString(key);
                     return (s.Length > 5 ? s.Substring(0,5) : s).ToUpperInvariant();
